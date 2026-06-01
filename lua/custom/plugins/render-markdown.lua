@@ -1,7 +1,5 @@
-return {
-  'MeanderingProgrammer/render-markdown.nvim',
-  dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.nvim' },
-  ---@module 'render-markdown'
-  ---@type render.md.UserConfig
-  opts = {},
-}
+-- render-markdown.nvim — improved in-buffer markdown rendering
+-- `nvim-treesitter` and `mini.nvim` are already installed by the core config.
+vim.pack.add { 'https://github.com/MeanderingProgrammer/render-markdown.nvim' }
+
+require('render-markdown').setup {}
